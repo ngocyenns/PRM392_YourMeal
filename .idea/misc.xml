@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/HocTap/FA22_PRM392/PRM392_YourMeal/app/src/main/res/drawable/border.xml" value="0.1695" />
+        <entry key="..\:/HocTap/FA22_PRM392/PRM392_YourMeal/app/src/main/res/layout/activity_add_new_food.xml" value="0.22" />
         <entry key="..\:/SE1504/FALL_2022/PRM/Projects/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/SE1504/FALL_2022/PRM/Projects/app/src/main/res/layout/activity_profile.xml" value="0.5" />
       </map>
