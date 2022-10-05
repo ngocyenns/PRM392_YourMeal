@@ -1,10 +1,12 @@
-package com.example.yourmeal;
+package com.example.yourmeal.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class AddNewFood extends AppCompatActivity {
+import com.example.yourmeal.R;
+
+public class AddNewFoodActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

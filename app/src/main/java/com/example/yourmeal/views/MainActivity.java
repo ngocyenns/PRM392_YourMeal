@@ -1,17 +1,19 @@
-package com.example.yourmeal;
+package com.example.yourmeal.views;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.yourmeal.R;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -34,10 +36,15 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     private static final String TAG = "GOOGLE_SIGN_IN_TAG";
     private SignInButton btnGoogleSignIn;
+    private static final int REQUEST_CODE = 10;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        requestInternet();
+
         btnGoogleSignIn = (SignInButton) findViewById(R.id.btnGoogleSignIn);
 
         //config google signin
@@ -60,6 +67,32 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    private void requestInternet() {
+        if(Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
+            return;
+        }
+
+        if(checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+            Toast.makeText(this,"Permission Granted", Toast.LENGTH_LONG).show();
+        } else {
+            String[] permissions = {Manifest.permission.ACCESS_FINE_LOCATION};
+
+            requestPermissions(permissions,REQUEST_CODE);
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if(requestCode == REQUEST_CODE) {
+            if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                Toast.makeText(this,"Permission Granted", Toast.LENGTH_LONG).show();
+            } else {
+                Toast.makeText(this,"Permission Denied", Toast.LENGTH_LONG).show();
+            }
+        }
     }
 
     private void checkUser() {
