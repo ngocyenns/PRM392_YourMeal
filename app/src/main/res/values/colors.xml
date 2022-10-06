@@ -8,4 +8,15 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FF0000</color>
+    <color name="pink">#F43F5E</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="_bg__local_color">#FFFFFF</color>
+    <color name="list_meals_color">#09101D</color>
+    <color name="text_color">#F43F5E</color>
+    <color name="lovy_food_color">#858B94</color>
+    <color name="home_color">#000000</color>
 </resources>

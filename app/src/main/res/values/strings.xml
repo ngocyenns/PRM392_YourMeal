@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">YourMeal</string>
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="list_meals_string">List Meals</string>
+    <string name="text_string">Text</string>
+    <string name="search_string">Search</string>
+    <string name="this_is_the_description_area_string">This is the description area</string>
+    <string name="original_salad_string">Original Salad</string>
+    <string name="lovy_food_string">Lovy Food</string>
+    <string name="__8_string">$8</string>
+    <string name="fresh_salad_string">Fresh Salad</string>
+    <string name="cloudy_resto_string">Cloudy Resto</string>
+    <string name="__10_string">$10</string>
+    <string name="yummie_ice_cream_string">Yummie Ice Cream</string>
+    <string name="circlo_resto_string">Circlo Resto</string>
+    <string name="__6_string">$6</string>
+    <string name="vegan_special_string">Vegan Special</string>
+    <string name="haty_food_string">Haty Food</string>
+    <string name="__11_string">$11</string>
+    <string name="mixed_pasta_string">Mixed Pasta</string>
+    <string name="__13_string">$13</string>
+    <string name="home_string">Home</string>
+    <string name="title_activity_menu">menu</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
