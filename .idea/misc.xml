@@ -16,6 +16,7 @@
         <entry key="..\:/AndroidStudioProject/PRM392_YourMeal/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.17" />
         <entry key="..\:/HocTap/FA22_PRM392/PRM392_YourMeal/app/src/main/res/drawable/border.xml" value="0.1695" />
         <entry key="..\:/HocTap/FA22_PRM392/PRM392_YourMeal/app/src/main/res/layout/activity_add_new_food.xml" value="0.22" />
+<<<<<<< HEAD
         <entry key="..\:/Project_Android/PRM392_YourMeal/app/src/main/res/drawable/a.xml" value="0.292" />
         <entry key="..\:/Project_Android/PRM392_YourMeal/app/src/main/res/drawable/arrow_back.xml" value="0.263" />
         <entry key="..\:/Project_Android/PRM392_YourMeal/app/src/main/res/drawable/arrow_back_Pink.xml" value="0.3135" />
@@ -46,8 +47,16 @@
         <entry key="..\:/Project_Android/PRM392_YourMeal/app/src/main/res/layout/menu.xml" value="0.27355072463768115" />
         <entry key="..\:/Project_Android/PRM392_YourMeal/app/src/main/res/layout/registor.xml" value="0.18" />
         <entry key="..\:/Project_Android/PRM392_YourMeal/app/src/main/res/menu/bottom_nav_menu.xml" value="0.29375" />
+=======
+        <entry key="..\:/SE1504/FALL_2022/PRM/Projects/app/src/main/res/drawable/arrow_back.xml" value="0.1945" />
+        <entry key="..\:/SE1504/FALL_2022/PRM/Projects/app/src/main/res/drawable/profile_user.xml" value="0.1945" />
+        <entry key="..\:/SE1504/FALL_2022/PRM/Projects/app/src/main/res/layout/activity_add_new_food.xml" value="0.21" />
+        <entry key="..\:/SE1504/FALL_2022/PRM/Projects/app/src/main/res/layout/activity_login.xml" value="0.16417272338606242" />
+>>>>>>> fix/databinding
         <entry key="..\:/SE1504/FALL_2022/PRM/Projects/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/SE1504/FALL_2022/PRM/Projects/app/src/main/res/layout/activity_profile.xml" value="0.5" />
+        <entry key="..\:/SE1504/FALL_2022/PRM/Projects/app/src/main/res/layout/activity_profile.xml" value="0.16417272338606242" />
+        <entry key="..\:/SE1504/FALL_2022/PRM/Projects/app/src/main/res/layout/login.xml" value="0.25" />
+        <entry key="..\:/SE1504/FALL_2022/PRM/Projects/app/src/main/res/layout/registor.xml" value="0.16417272338606242" />
         <entry key="..\:/WorkPlace/Java_Android/PRM392_Project_Your_Meal/app/src/main/res/layout/activity_main.xml" value="0.21927083333333333" />
         <entry key="..\:/WorkPlace/Java_Android/PRM392_Project_Your_Meal/app/src/main/res/layout/activity_profile.xml" value="0.21927083333333333" />
         <entry key="..\:/WorkPlace/Java_Android/PRM392_Project_Your_Meal/app/src/main/res/layout/login.xml" value="0.2" />

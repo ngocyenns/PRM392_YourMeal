@@ -1,14 +1,16 @@
-package com.example.yourmeal;
+package com.example.yourmeal.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class AddNewFood extends AppCompatActivity {
+import com.example.yourmeal.R;
+
+public class ListMealActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_new_food);
+        setContentView(R.layout.activity_list_meal);
     }
 }
