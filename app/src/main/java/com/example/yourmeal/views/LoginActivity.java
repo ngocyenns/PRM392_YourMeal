@@ -1,31 +1,50 @@
 package com.example.yourmeal.views;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
+import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.BindingAdapter;
-import androidx.databinding.DataBindingUtil;
 
 import com.example.yourmeal.R;
-import com.example.yourmeal.databinding.ActivityLoginBinding;
 
 import com.example.yourmeal.viewmodels.LoginViewModel;
 
 public class LoginActivity extends AppCompatActivity {
+    private EditText edtUsername;
+    private EditText edtPass;
+    private Button btnLogin;
+    private LoginViewModel loginViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ActivityLoginBinding activityLoginBinding = DataBindingUtil.setContentView(this, R.layout.activity_login);
-        activityLoginBinding.setViewModel(new LoginViewModel());
-        activityLoginBinding.executePendingBindings();
-    }
+        setContentView(R.layout.activity_login);
 
-    @BindingAdapter({"toastMessage"})
-    public static void runMe(View view, String message) {
-        if (message != null)
-            Toast.makeText(view.getContext(), message, Toast.LENGTH_SHORT).show();
+        edtUsername = findViewById(R.id.edtUserName);
+        edtPass = findViewById(R.id.edtPassword);
+        btnLogin = findViewById(R.id.btnLogin);
+        loginViewModel = new LoginViewModel();
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String username = edtUsername.getText().toString();
+                String pass = edtPass.getText().toString();
+                Log.d("mess",username+" "+pass);
+
+                Boolean statusLogin = loginViewModel.checkLogin(username, pass);
+                Intent intent;
+                if(statusLogin) {
+                    intent = new Intent(LoginActivity.this, HomeLocalActivity.class);
+                } else {
+                    intent = new Intent(LoginActivity.this, LoginActivity.class);
+                    intent.putExtra("error","Tài khoản hoặc mật khẩu không đúng!!!");
+                }
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Profile"
+                android:text="Thông tin cá nhân"
                 android:textColor="@color/white"
                 android:textSize="32sp" />
 
@@ -65,14 +65,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Jone RiChard"
+                    android:text="Trương Nhựt Thăng nè"
                     android:textColor="@color/white"
                     android:textSize="20dp" />
             </LinearLayout>
 
         </RelativeLayout>
     </LinearLayout>
-
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -99,7 +101,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Email"
+                        android:text="Email:"
                         android:textSize="14dp" />
                 </LinearLayout>
 
@@ -119,7 +121,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:paddingLeft="15dp"
-                        android:text="JoneThangRichard@gmail.com"
+                        android:text="nhutthang.t@gmail.com"
                         android:textColor="@color/black"
                         android:textSize="14dp" />
                 </LinearLayout>
@@ -145,7 +147,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Full name" />
+                        android:text="Tên:" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -164,7 +166,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:paddingLeft="15dp"
-                        android:text="RiChardLision Jone"
+                        android:text="Trương Nhựt Thăng nè"
                         android:textColor="@color/black"
                         android:textSize="14dp" />
                 </LinearLayout>
@@ -189,7 +191,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Phone" />
+                        android:text="Số điện thoại:" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -209,7 +211,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:paddingLeft="15dp"
-                        android:text="0978679801"
+                        android:text="0949496554 call me bấy bê"
                         android:textColor="@color/black"
                         android:textSize="14dp" />
                 </LinearLayout>
@@ -235,7 +237,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Address" />
+                        android:text="Địa chỉ:" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -254,7 +256,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:paddingLeft="15dp"
-                        android:text="CanTho, Rach Gia, TP HCM"
+                        android:text="Phường 5, Cà Mau"
                         android:textColor="@color/black"
                         android:textSize="14dp" />
                 </LinearLayout>
@@ -280,7 +282,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Gender" />
+                        android:text="Giới tính:" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -299,7 +301,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:paddingLeft="15dp"
-                        android:text="Male"
+                        android:text="Chắc là Nam"
                         android:textColor="@color/black"
                         android:textSize="14dp" />
                 </LinearLayout>
@@ -325,7 +327,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Birthday" />
+                        android:text="Ngày sinh:" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -344,7 +346,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:paddingLeft="15dp"
-                        android:text="30/12/1999"
+                        android:text="06/01/2001"
                         android:textColor="@color/black"
                         android:textSize="14dp" />
                 </LinearLayout>
@@ -357,4 +359,5 @@
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
+    </ScrollView>
 </LinearLayout>

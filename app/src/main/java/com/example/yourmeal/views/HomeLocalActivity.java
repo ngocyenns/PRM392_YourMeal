@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.yourmeal.R;
 
-public class ListMealActivity extends AppCompatActivity {
+public class HomeLocalActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_meal);
+        setContentView(R.layout.activity_home_local);
     }
 }

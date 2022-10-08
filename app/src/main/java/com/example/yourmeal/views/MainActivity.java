@@ -11,6 +11,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.yourmeal.R;
@@ -35,38 +36,45 @@ public class MainActivity extends AppCompatActivity {
     private GoogleSignInClient googleSignInClient;
     private FirebaseAuth firebaseAuth;
     private static final String TAG = "GOOGLE_SIGN_IN_TAG";
-    private SignInButton btnGoogleSignIn;
+    private Button btnGoogleSignIn;
     private static final int REQUEST_CODE = 10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        requestInternet();
-
-        btnGoogleSignIn = (SignInButton) findViewById(R.id.btnGoogleSignIn);
-
-        //config google signin
-        GoogleSignInOptions googleSignInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(getString(com.firebase.ui.auth.R.string.default_web_client_id))
-                .requestEmail()
-                .build();
-        googleSignInClient = GoogleSignIn.getClient(this, googleSignInOptions);
-
-        // init firebase
-        firebaseAuth = FirebaseAuth.getInstance();
-        checkUser();
+        btnGoogleSignIn = findViewById(R.id.btnGoogleSignIn);
         btnGoogleSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // begin google signin
-                Log.d(TAG,"onclick: begin google signin");
-                Intent intent = googleSignInClient.getSignInIntent();
-                startActivityForResult(intent,RC_SIGN_IN);
-
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
             }
         });
+//        requestInternet();
+//
+//        btnGoogleSignIn = (SignInButton) findViewById(R.id.btnGoogleSignIn);
+//
+//        //config google signin
+//        GoogleSignInOptions googleSignInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+//                .requestIdToken(getString(com.firebase.ui.auth.R.string.default_web_client_id))
+//                .requestEmail()
+//                .build();
+//        googleSignInClient = GoogleSignIn.getClient(this, googleSignInOptions);
+//
+//        // init firebase
+//        firebaseAuth = FirebaseAuth.getInstance();
+//        checkUser();
+//        btnGoogleSignIn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                // begin google signin
+//                Log.d(TAG,"onclick: begin google signin");
+//                Intent intent = googleSignInClient.getSignInIntent();
+//                startActivityForResult(intent,RC_SIGN_IN);
+//
+//            }
+//        });
     }
 
     private void requestInternet() {

@@ -14,17 +14,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.YourMeal"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
             android:name=".views.AddNewFoodActivity"
             android:exported="false" />
         <activity
-            android:name=".views.ListMealActivity"
+            android:name=".views.HomeLocalActivity"
             android:exported="false" />
         <activity
-            android:name=".views.LoginActivity"
+            android:name=".views.MainActivity"
             android:exported="false" />
         <activity
             android:name=".views.RegisterActivity"
@@ -34,7 +34,7 @@
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".views.MainActivity"
+            android:name=".views.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

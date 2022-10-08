@@ -1,29 +1,29 @@
 package com.example.yourmeal.model;
 
+import android.util.Patterns;
+
 public class User {
-    private String email;
-    private String password;
+    private String strEmailAddress;
+    private String strPassword;
 
-    public User(String email, String password) {
-        this.email = email;
-        this.password = password;
+    public User(String EmailAddress, String Password) {
+        strEmailAddress = EmailAddress;
+        strPassword = Password;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public String getStrEmailAddress() {
+        return strEmailAddress;
     }
 
-
-    public String getEmail() {
-        return email;
+    public String getStrPassword() {
+        return strPassword;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public boolean isEmailValid() {
+        return Patterns.EMAIL_ADDRESS.matcher(getStrEmailAddress()).matches();
     }
 
-
-    public String getPassword() {
-        return password;
+    public boolean isPasswordLengthGreaterThan5() {
+        return getStrPassword().length() > 5;
     }
 }
